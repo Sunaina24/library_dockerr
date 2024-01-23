@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add New Book</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/newBook.css}" href="../static/newBook.css">
+</head>
+<body>
+<div class="header">
+    <h1>Add New Book</h1>
+</div>
+<div class="content">
+    <<form th:action="@{/admin/addBook}" method="post">
+    <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" th:required="required">
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" th:required="required">
+
+        <label for="totalCopies">Total Copies:</label>
+        <input type="number" id="totalCopies" name="totalCopies" th:required="required">
+
+        <label for="copiesBorrowed">Copies Borrowed:</label>
+        <input type="number" id="copiesBorrowed" name="copiesBorrowed" th:required="required">
+
+        <button type="submit">Add Book</button>
+    </div>
+</form>
+
+    <div id="footer">
+    <footer>
+        &copy; 2023 Library Management System. All rights reserved.
+    </footer>
+</div>
+</body>
+</html>

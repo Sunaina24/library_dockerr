@@ -1,0 +1,10 @@
+com\example\Library\Management\controller\LoginController.class
+com\example\Library\Management\repository\UserRepository.class
+com\example\Library\Management\LibraryManagementApplication.class
+com\example\Library\Management\repository\BookRepository.class
+com\example\Library\Management\model\User.class
+com\example\Library\Management\controller\BookController.class
+com\example\Library\Management\controller\UserController.class
+com\example\Library\Management\service\UserService.class
+com\example\Library\Management\service\BookService.class
+com\example\Library\Management\model\Book.class

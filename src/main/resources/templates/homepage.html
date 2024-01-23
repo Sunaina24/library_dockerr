@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link th:href="@{/homepage.css}" href="../static/homepage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header">
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+</div>
+
+<div id="navigation">
+    <nav>
+        <ul>
+            <li><a th:href="@{/admin/add}" class="button">Add Book</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="drop-down">List</button>
+                    <div class="dropdown-content">
+                        <a th:href="@{/admin/list-books}">Book List</a>
+                        <a th:href="@{/app/users/admin/get-user}">User List</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="footer">
+    <footer>
+        &copy; 2023 Library Management System. All rights reserved.
+    </footer>
+</div>
+</body>
+</html>
+
