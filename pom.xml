@@ -55,33 +55,6 @@
 			<version>3.1.2</version>
 		</dependency>
 
-		<dependency>
-   	        <groupId>org.jacoco</groupId>
-   		<artifactId>jacoco-maven-plugin</artifactId>
-		<version>0.8.6</version>
-               </dependency>
-		
-<!--		<dependency>-->
-<!--			<groupId>org.keycloak</groupId>-->
-<!--			<artifactId>keycloak-spring-boot-starter</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.keycloak</groupId>-->
-<!--			<artifactId>keycloak-servlet-filter-adapter</artifactId>-->
-<!--			<version>21.0.0</version>-->
-<!--			<scope>provided</scope>-->
-<!--		</dependency>-->
-<!--	</dependencies>-->
-<!--	<dependencyManagement>-->
-<!--		<dependencies>-->
-<!--			<dependency>-->
-<!--				<groupId>org.keycloak.bom</groupId>-->
-<!--				<artifactId>keycloak-adapter-bom</artifactId>-->
-<!--				<version>21.0.0</version>-->
-<!--				<type>pom</type>-->
-<!--				<scope>import</scope>-->
-<!--			</dependency>-->
-<!--	</dependencyManagement>-->
 </dependencies>
 	<build>
 		<plugins>
@@ -97,25 +70,25 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			     <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>${jacoco-maven-plugin}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+			 <plugin>
+						<groupId>org.jacoco</groupId>
+						<artifactId>jacoco-maven-plugin</artifactId>
+						<version>0.8.7</version> <!-- Use the latest version -->
+						<executions>
+							<execution>
+								<goals>
+									<goal>prepare-agent</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>report</id>
+								<phase>prepare-package</phase>
+								<goals>
+									<goal>report</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
 		</plugins>
 	</build>
 
